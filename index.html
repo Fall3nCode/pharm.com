@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PakingsPharmaceuticals</title>
+  <link rel="stylesheet" href="pharm.css">
+</head>
+<body class="dark">
+
+<header>
+  <h1>💊 Packings.LTD</h1>
+  <nav>
+    <input type="text" id="search" placeholder="Search medicine...">
+    <a href="#products">Products</a>
+    <a href="#cart">Cart 🛒 (<span id="cart-count">0</span>)</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Your Trusted Pharmacy</h2>
+  <p>Affordable and reliable medications</p>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Medicines</h2>
+  <div id="product-list"></div>
+</section>
+
+<section id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <h3>Total: ₦<span id="total">0</span></h3>
+  <button onclick="checkout()">Checkout</button>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2010 PharmaCare | All rights reserved</p>
+</footer>
+
+<script src="pharm.js"></script>
+</body>
+</html>
